@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Years</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Years from 2024 to 1919</h1>
+    <div id="yearList"></div>
+
+    <script>
+        var output = "";
+        for (var year = 2024 ; year >= 1919; year = year-1) {
+            if (year== 1948) {
+                continue; 
+            }
+            output += year + '<br>';
+        }
+        document.getElementById('yearList').innerHTML = output; 
+    </script>
+
+</body>
+</html>
